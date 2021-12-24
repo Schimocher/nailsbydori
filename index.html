@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Nails by Dóri</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Corinthia:wght@700&family=Patrick+Hand&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="https://kit.fontawesome.com/6029b4dcb1.js" crossorigin="anonymous"></script>
+        <script>
+            var prevScrollpos = window.pageYOffset;
+            window.onscroll = function() {
+            var currentScrollPos = window.pageYOffset;
+              if (prevScrollpos > currentScrollPos) {
+                document.getElementById("főoldal").style.top = "0";
+              } else {
+                document.getElementById("főoldal").style.top = "-100px";
+              }
+              prevScrollpos = currentScrollPos;
+            }
+        </script>
+    </head>
+    <body>
+        <header id="főoldal">
+            <img src="nails.jpg" alt="" class="logo">
+            <h1 class="dori">Nails by Dóri</h1>
+            <nav>
+                <ul class="nav-area">
+                    <li><a href="#főoldal">Főoldal</a></li>
+                    <li><a href="#rólam">Rólam</a></li>
+                    <li><a href="#szolg">Szolgáltatások</a></li>
+                    <li><a href="#kapcs">Kapcsolat</a></li>
+                </ul>
+            </nav>
+             <a href="#kapcs" class="btn-area">Időpontfoglalás</a>
+        </header>
+        <div class="intro">
+            <h1 class="ricler">Ricler Dóra</h1>
+            <p id="rólam">Kedves Huncutka!<br>Bár már tudsz erről az oldalról, de akkor még elég sablonos volt nem láthattad teljes szépségében. Tudásom javát beleadtam a programozásába, de továbbra is fejleszteni fogom igényeid és fejlődő képességeim szerint. Örömmel készítettem neked, remélem sikerül néhány embernek megmutatni vele a tehetségedet.<br>Boldog karácsonyt kívánok!</p>
+        </div>
+        <h1 id="szolg">Szolgáltatások</h1>
+        <div class="responsive">
+            <div class="képek">
+                <img src="kep1.jpg" alt="1">
+            </div>
+            <div class="leiras">Szolgáltatás ismertetése</div>
+        </div>
+        <div class="responsive">
+            <div class="képek">
+                <img src="kep2.jpg" alt="2">
+            </div>
+            <div class="leiras">Szolgáltatás ismertetése</div>
+        </div>
+        <div class="responsive">
+            <div class="képek">
+                <img src="kep3.jpg" alt="3" loading="lazy">
+            </div>
+            <div class="leiras">Szolgáltatás ismertetése</div>
+        </div>
+        <div class="responsive">
+            <div class="képek">
+                <img src="kep4.jpg" alt="4" loading="lazy">
+            </div>
+            <div class="leiras">Szolgáltatás ismertetése</div>
+        </div>
+        <div class="responsive">
+            <div class="képek">
+                <img src="kep5.jpg" alt="5" loading="lazy">
+            </div>
+            <div class="leiras">Szolgáltatás ismertetése</div>
+        </div>
+        <div class="responsive">
+            <div class="képek">
+                <img src="kep6.jpg" alt="6" loading="lazy">
+            </div>
+            <div class="leiras">Szolgáltatás ismertetése</div>
+        </div>
+        <footer>
+            <div class="contacts">
+                <h1 id="kapcs">Kapcsolatok</h1>
+            </div>
+            <div class="foot">
+                <ul class="foot-area">
+                    <li><a href="https://www.facebook.com/dori.ricler"><i class="fab fa-facebook fa-2x"></i></a></li>
+                    <li><a href="https://www.instagram.com/nails.lashes.brows.by.dori/"><i class="fab fa-instagram fa-2x"></i></a></li>
+                    <li><a href="tel:06205395466"><i class="fas fa-mobile-alt fa-2x"></i></a></li>
+                    <li><a href="mailto:ricler.dori@gmail.com"><i class="far fa-envelope fa-2x"></i></a></li>
+                </ul>
+            </div>
+            <h5>All rights reserved. Made by <a href="https://www.facebook.com/attila.simo.16/">Simó Attila</a> <i class="fas fa-heart" style="color:red"></i></h5>
+        </footer>
+    </body>
+</html>
