@@ -8,7 +8,6 @@ html{
 }
 
 body{
-    overflow-y: scroll;
     background: url(hatter.jpg);
     background-attachment: fixed;
     -webkit-background-size: cover;
@@ -112,13 +111,19 @@ div.leiras{
     float: left;
     width: 48%;
 }
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 1000px){
     header{
         display: flex;
         flex-direction: column;
     }
+    .ricler{
+        padding-top: 100px;
+    }
+    footer{
+        width: 100%;
+    }
 }
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 1000px){
     .responsive{
         width: 100%;
     }
@@ -133,6 +138,7 @@ h1{
     color: white;
 }
 footer{
+    width: 100%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -177,6 +183,4 @@ h5 a:hover{
     transition: 0.4s;
     font-size: 20px;
 }
-#rólam{
-    background-color: rgba(0, 0, 0, 0.700);
-}
+
